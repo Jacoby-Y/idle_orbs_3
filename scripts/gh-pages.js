@@ -4,7 +4,7 @@ publish(
   'dist',
 	{
 		branch: 'gh-pages',
-		repo: 'https://github.com/Jacoby-Y/idle-orbs-3.git',
+		repo: 'https://github.com/Jacoby-Y/idle_orbs_3.git',
 		user: {
 			name: 'Jacoby-Y',
 			email: 'cobyyliniemi@gmail.com'
