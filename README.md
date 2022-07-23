@@ -3,6 +3,8 @@
 
 Another installment in the Idle Orbs Series™ 
 
+Github pages: https://jacoby-y.github.io/idle_orbs_3/
+
 
 #### TODO
 - Settings
