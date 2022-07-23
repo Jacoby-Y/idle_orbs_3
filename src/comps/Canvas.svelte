@@ -5,6 +5,7 @@
 	import OrbM from "../lib/orbs.js";
 	import { clamp, fNum, isFunc, randInt } from "../lib/funcs.js";
 	import { get } from "svelte/store";
+	import cursor from "../assets/cursor.svg";
 
 	//#region | Orb Stuff
 	// basic_orb.subscribe(({ amount }) => OrbM.setAmount("basic", amount) );
@@ -88,7 +89,7 @@
 				orb.vx *= 3;
 				orb.vy *= 3;
 			})
-		}
+		}	
 	});
 	//#endregion
 
@@ -115,7 +116,7 @@
 	<h3 id="cash-txt">Cash: {fNum($cash)}
 		<!-- <br>FPS: {smooth_fps(fps)} -->
 	</h3>
-	<img bind:this={click_hint} id="click-hint" src="./src/assets/cursor.svg" alt="Click Here">
+	<img bind:this={click_hint} id="click-hint" src=".{cursor}" alt="Click Here?">
 	<h3 id="plat-index" style="bottom: {$plat.h}px;">{$plat.index + 1}</h3>
 	<canvas bind:this={canvas} class:pointer={click_ticks <= 0}></canvas>
 </main>
